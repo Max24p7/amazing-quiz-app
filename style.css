@@ -6,13 +6,14 @@
 body {
     padding: 0;
     margin: 0;
+    /* Below:  Centers content horizontally and vertically of viewport */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(5,5,59,1) 42%, rgba(0,212,255,1) 100%);
+    background: rgb(33,33,33);
+    background: linear-gradient(180deg, rgba(33,33,33,1) 26%, rgba(255,255,255,1) 95%);
 }
 
 .container {
@@ -24,6 +25,12 @@ body {
     box-shadow: 0 0 30px 1px #dee048;
 }
 
+.container-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Creates a grid template for the questions to be set in two columns. */
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(2,auto);
@@ -40,10 +47,12 @@ body {
     font-weight: bold;
 }
 
+/* Adds black border to hovered answers */
 .btn:hover {
     border-color: black;
 }
 
+/* adds a gold gradient to the background of the correct answer. */
 .btn.correct {
     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
@@ -51,24 +60,27 @@ body {
     border: 2px inset green;
 }
 
+/* adds a gray background with red border to incorrect answers */
 .btn.wrong {
     background-color: gray;
     color: black;
     border: 2px inset red;
 }
 
-.start-btn, .next-btn {
+.start-btn, .next-btn, .save-btn {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
 }
 
+/* creates spacing for the next, start, and reset buttons */
 .controls {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
+/* Hidden class for buttons not being used. */
 .hide {
     display: none;
 }

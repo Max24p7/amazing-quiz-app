@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <script defer src="script.js"></script>
-    <title>QUIZER</title>
+    <script defer src="script.js"></script> <!--'defer' will send the script to the bottom of the page when loaded-->
+    <title>Front End Quizzer App</title>
 </head>
 <body>
     <!-- Placeholder for questions -->
     <div class="container">
+        <div class="container-header">
+            <h1>Quiz Game</h1>
+            <h1 id="message" class="hide"></h1>
+            <h1 id="timer">60</h1>
+        </div>
         <div id="question-container" class="hide"></div>
             <div id="question">Question</div>
             <div id="answer-buttons" class="btn-grid">
@@ -18,9 +23,11 @@
                 <button class="btn">Answer 3</button>
                 <button class="btn">Answer 4</button>
             </div>
-        <div class="controls">
+        <div class="controls"> <!-- Placeholders for start, reset, and next buttons -->
             <button id="start-btn" class="start-btn btn">Start</button>
             <button id="next-btn" class="next-btn btn hide">Next</button>
+            <input id="input" class="hide" type="text" placeholder="Enter Initials">
+            <button id="save-btn" class="save-btn btn hide">Save</button>
         </div>
     </div>
 

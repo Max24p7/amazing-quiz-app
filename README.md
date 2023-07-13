@@ -12,7 +12,7 @@ Run the index.html file in a browser window or go to the github pages link here:
 
 To start the quiz, click start and answer the questions as best you can.  You will be alotted 60 seconds and for every question that you get wrong you will lose 10 seconds.  There are a total of 9 questions so try to finish them all in the given time.  When you finish the quiz, please save your initials with your final score.  All scores will be logged in the console.  Click reset to the start over.
 
-![Screenshot of page](screenshot.png)
+![Screenshot of page](screenshot.PNG)
 
 
 ## Credits

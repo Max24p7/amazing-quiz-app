@@ -6,7 +6,7 @@ This project is a quiz game created mostly using Javascript.  I am still not ver
 
 ## Installation
 
-Run the index.html file in a browser window or go to the github pages link here:  <a href="https://max24p7.github.io/password-generator-random/">https://max24p7.github.io/password-generator-random/</a>
+Run the index.html file in a browser window or go to the github pages link here:  <a href="https://max24p7.github.io/amazing-quiz-app/">https://max24p7.github.io/amazing-quiz-app/</a>
 
 ## Usage
 
